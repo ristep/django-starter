@@ -1,0 +1,35 @@
+<!-- templates/home.html -->
+{% extends "base.html" %}
+{% block title %}Home {% endblock title %}
+
+{% block content %}
+
+<svg id="srcka-ballonest" viewbox="0 0 300 300" width="48">
+    <use xlink:href="#srcka-ballonest" />
+</svg>
+
+<a href="" class='overlay cart-button btn btn-outline-warning'>
+    <svg id="srcka-ballonest" viewbox="0 0 500 500" width="48">
+        <use xlink:href="#srcka-ballonest" />
+    </svg>
+</a>
+
+<main>
+    <section class="featured-products">
+        <h2>Django Starter whith PosgreSQL </h2>
+    </section>
+    <section class="about-us cart-context-menu">
+        <h2 class="cart-context-menu">Ver: 0.01.00c</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus bibendum suscipit nulla id imperdiet.</p>
+    </section>
+</main>
+
+<script>
+
+    $(document).ready(() => {
+
+    });
+
+</script>
+
+{% endblock content %}

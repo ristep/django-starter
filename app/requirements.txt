@@ -1,0 +1,14 @@
+Django
+gunicorn
+psycopg2-binary
+django-widget-tweaks
+django-cors-headers
+djangorestframework
+djangorestframework-simplejwt
+Pillow
+platformdirs
+PyJWT
+python-decouple
+PyYAML
+sqlparse
+django-dbbackup
