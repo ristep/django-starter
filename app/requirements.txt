@@ -5,6 +5,7 @@ django-widget-tweaks
 django-cors-headers
 djangorestframework
 djangorestframework-simplejwt
+django-compressor
 Pillow
 platformdirs
 PyJWT

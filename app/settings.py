@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     "rest_framework_simplejwt.token_blacklist",
     "widget_tweaks",
     "corsheaders",
+    "compressor",
     # my apps
     "static_pages",
     "account",
@@ -47,6 +48,15 @@ INSTALLED_APPS = [
     "restaurant",
     "upload",
 ]
+
+
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    # other finders..
+    'compressor.finders.CompressorFinder',
+)
+
 
 # settings.py
 # MIGRATION_MODULES = {
@@ -169,6 +179,8 @@ MEDIA_URL = os.environ.get("MEDIA_URL")     # "http://localhost:1337/media/"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
+
+# CORS_ORIGIN_ALLOW_ALL = True
 SIMPLE_JWT = {
     "ACCESS_TOKEN_LIFETIME": timedelta(minutes=5),
     "REFRESH_TOKEN_LIFETIME": timedelta(days=90),
